@@ -1,0 +1,63 @@
+
+@import "main-header.scss";
+@import "slogan.scss";
+@import "list-programs";
+@import "how-it-work";
+@import "example";
+@import "viewer";
+@import "map";
+@import "main-footer";
+
+
+
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("../fonts/Oswald-Bold.eot");
+  src: local("☺"), url("../fonts/Oswald-Bold.woff") format("woff"), url("../fonts/Oswald-Bold.ttf") format("truetype"), url("../fonts/Oswald-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+// @font-face {
+//   font-family: "Oswald-Regular";
+//   src: url("../fonts/Oswald-Regular.eot");
+//   src: local("☺"), url("../fonts/Oswald-Medium.woff") format("woff"), url("../fonts/Oswald-Regular.ttf") format("truetype"), url("../fonts/Oswald-Regular.svg") format("svg");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../fonts/Oswald-Regular.eot");
+  src: local("☺"), url("../fonts/Oswald-Regular.ttf") format("truetype"), url("../fonts/Oswald-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url("fonts/Oswald-Medium.eot");
+  src: local("☺"), url("fonts/Oswald-Medium.woff") format("woff"), url("fonts/Oswald-Medium.ttf") format("truetype"), url("../fonts/Oswald-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+$font-stack: helvetica, sans-serif;
+$primary-color: black;
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Arial", sans-serif;
+  background-color: #fdfdfd;
+}
+
+.main-header2 {
+  display: flex;
+}

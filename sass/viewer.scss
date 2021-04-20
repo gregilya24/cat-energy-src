@@ -1,0 +1,235 @@
+.viewer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.viewer__view-wrap {
+  flex-basis: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 240px;
+  position: relative;
+
+
+  // width: 260px;
+}
+.viewer__view-before {
+  background-color: inherit;
+  width: 100%;
+  background-image: url("../img/before-mobile.png");
+  height: 240px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  top: 35px;
+  // left: 0px;
+
+}
+.viewer__view--mob-hidden {
+  display: none;
+}
+.viewer__view-after {
+  background-color: inherit;
+  width: 100%;
+  background-image: url("../img/after-mobile.png");
+  height: 240px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  position: absolute;
+  top: 35px;
+  // left: 0px;
+  // display: none;
+  // display: block;
+}
+.viewer__control {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  justify-content: space-around;
+
+}
+.viewer__control-checkbox {
+   position:absolute; left:-9999px
+ }
+.viewer__control-switch {
+
+  width: 84px;
+  height: 14px;
+  border: 1px solid #cdcdcd;
+  border-radius: 7px;
+  background: white;
+  position: relative;
+  cursor: pointer;
+  // transition: 350ms;
+}
+
+.viewer__control-switch::after {
+  content: "";
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background: green;
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  // transition:
+  //     width 200ms ease-out,
+  //     height 300ms 50ms ease-in,
+  //     top 300ms 50ms ease-in,
+  //     left 250ms 50ms ease-in,
+  //     right 250ms 50ms ease-in,
+  //     background 300ms ease-in,
+  //     box-shadow 300ms ease-in;
+
+}
+
+.viewer__control-checkbox:checked + .viewer__control-switch::after {
+  left: auto;
+  right: 5px;
+  // transition:
+  //     width 200ms ease-out,
+  //     height 300ms 50ms ease-in,
+  //     top 300ms 50ms ease-in,
+  //     left 250ms 50ms ease-in,
+  //     right 250ms 50ms ease-in,
+  //     background 300ms ease-in,
+  //     box-shadow 300ms ease-in;
+
+}
+
+.viewer__control-before-btn,
+.viewer__control-after-btn {
+  font-size: 16px;
+  font-family: "Oswald";
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+  line-height: 1.25;
+  border: 0px;
+  background-color: inherit;
+  cursor: pointer;
+  border-radius: 0px;
+}
+.viewer__range {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .viewer {
+    justify-content: center;
+    z-index: 10;
+  }
+  .viewer__view-wrap {
+    height: 517px;
+    width: 677px;
+    margin: 0 auto;
+    flex-basis: auto;
+  }
+  .viewer__view-wrap  .viewer__view-before {
+    // display: block;
+    background-image: url("../img/before-desktop.png");
+    background-position: left top;
+    height: 517px;
+    width: 50%;
+    // top: 0px;
+    left: 0px;
+    right: auto;
+  }
+  .viewer__view-wrap  .viewer__view-after {
+    // display: block;
+    background-image: url("../img/after-desktop.png");
+    background-position: right 50px top;
+    height: 517px;
+    width: 50%;
+    right: 0px;
+    left: auto;
+  }
+  .viewer__control {
+    width: 570px;
+  }
+  .viewer__control-switch {
+    display: none;
+  }
+
+  .example__viewer  {
+    flex-direction: column;
+    // align-items: baseline;
+  }
+  .viewer__range {
+    display: block;
+    width: 428px;
+  }
+
+  .viewer  button, .viewer input{
+      outline: none;
+    }
+  input[type=range] {
+   -webkit-appearance: none;
+   width: 428px;
+   border-radius: 8px;
+   height: 6px;
+   border: 0px solid #bdc3c7;
+   background-color: #dcdcdc;
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   background-color: white;
+   border: 1px solid #cfcfcf;
+   width: 34px;
+   height: 34px;
+   border-radius: 17px;
+   cursor: pointer;
+   // position: relative;
+  }
+
+  input[type='range']::-webkit-slider-thumb:hover {
+    border: 1px solid green;
+  }
+  .viewer__range {
+    display: block;
+    width: 428px;
+    height: 40px;
+  }
+  .viewer__control {
+    align-items: center;
+  }
+}
+@media (min-width: 1440px) {
+  .example {
+    position: relative;
+  }
+
+  .viewer__view-wrap {
+    padding-top: 0px;
+    padding-bottom: 45px;
+  }
+  .example__viewer {
+    width: 677px;
+    position: absolute;
+    top: 0px;
+    right:  0px;
+    height: auto;
+    // width: 500px;
+    // left: auto;
+  }
+  .viewer__control-before-btn,
+  .viewer__control-after-btn {
+    font-size: 20px;
+    font-family: "Oswald";
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    line-height: 1;
+
+  }
+    .viewer__view-wrap  .viewer__view-before,
+    .viewer__view-wrap  .viewer__view-after {
+      top: 25px;
+    }
+
+
+
+}

@@ -1,0 +1,169 @@
+.list-programs {
+  margin-top: 22px;
+}
+.list-programs__wrap {
+  padding: 0px 20px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.list-programs__item {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  flex-grow: 1;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  // overflow: visible;
+}
+
+.list-programs__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
+  position: relative;
+  // margin-left: 10px;
+  // margin-top: 10px;
+  overflow: visible;
+}
+.list-programs__img img {
+  position: absolute;
+
+  overflow: visible;
+
+}
+.list-programs__img--cat-stand img {
+  width: 35px;
+  left: 8px;
+  bottom: 4px;
+}
+.list-programs__img--cat-run img {
+  width: 67px;
+  left: -9px;
+  bottom: 11px;
+}
+
+.list-programs__tittle {
+  font-size: 24px;
+  font-family: "Oswald";
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+  margin-left: 19px;
+  // font-weight: 400;
+}
+.list-programs__desc {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin: 0px;
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 14px;
+  color: #444444;
+}
+.list-programs__link {
+  font-size: 16px;
+  font-family: "Oswald";
+  color: rgb(17, 17, 17);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .list-programs {
+    margin-top: 0px;
+  }
+  .list-programs__wrap {
+    padding: 0px 30px;
+  }
+  .list-programs__item {
+    padding: 80px 60px 60px 50px;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 244px;
+  }
+  .list-programs__img {
+    position: absolute;
+    top:90px;
+    right: 60px;
+    width: 200px;
+    height: 200px;
+  }
+  .list-programs__img--cat-stand img {
+    width: 140px;
+    left: 30px;
+    bottom: 18px;
+  }
+  .list-programs__img--cat-run img {
+    width: 268px;
+    left: -36px;
+    bottom: 44px;
+  }
+  .list-programs__tittle, {
+    font-size: 36px;
+    margin-left: 0px;
+    width: calc(100% - 240px)
+  }
+  .list-programs__desc {
+    font-size: 20px;
+    width: calc(100% - 240px);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 0px;
+  }
+}
+@media (min-width: 1440px) {
+  .list-programs {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .list-programs__wrap {
+    justify-content: space-between;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .list-programs__item {
+    width:470px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 0;
+    padding: 50px;
+    margin-bottom: 40px;
+  }
+  .list-programs__img {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top:auto;
+    right: auto;
+  }
+  .list-programs__img--cat-stand img {
+    width: 70px;
+    left: 14px;
+    bottom: 9px;
+  }
+  .list-programs__img--cat-run img {
+    width: 134px;
+    left: -18px;
+    bottom: 22px;
+  }
+  .list-programs__tittle {
+    margin-left: 60px;
+  }
+  .list-programs__desc {
+    flex-grow: 1;
+    width: auto;
+  }
+  .list-programs__link {
+    flex-grow: 1;
+  }
+}

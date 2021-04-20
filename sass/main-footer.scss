@@ -1,0 +1,124 @@
+.main-footer {
+  background-color: #f2f2f2;
+}
+.main-footer-wrap {
+  background-color: #f2f2f2;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 37px;
+  padding-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+}
+
+.main-footer__tittle {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d9d9d9;
+  // width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main-footer__designed-from-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+}
+.main-footer__designed-from-item {
+  height: 34px;
+}
+.social-buttons__vk {
+  height: 12px;
+}
+.social-buttons__vk-img {
+  height: 12px;
+}
+.social-buttons__fb,
+.social-buttons__fb-img {
+  height: 19px;
+}
+.social-buttons__insta,
+.social-buttons__insta-img {
+  height: 16px;
+}
+.social-buttons {
+  margin: 0px;
+  padding: 0px;
+}
+.main-footer__social-buttons {
+  padding-left: 75px;
+  padding-right: 75px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d9d9d9;
+}
+@media (min-width: 768px) {
+  .main-footer-wrap {
+    flex-direction:row;
+    justify-content: space-between;
+  }
+  .main-footer__social-buttons,
+  .main-footer__tittle {
+    border-bottom: 0px;
+  }
+  .main-footer__social-buttons,
+  .main-footer__designed-from-area {
+    width: 132px;
+
+  }
+  .main-footer__tittle,
+  .main-footer__social-buttons,
+  .main-footer__designed-from-area {
+    padding: 0px;
+  }
+  .main-footer__social-buttons {
+    align-items: center;
+  }
+  .main-footer-wrap  {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .social-buttons__vk,
+  .social-buttons__vk-img {
+    height: 16px;
+  }
+  .social-buttons__fb,
+  .social-buttons__fb-img {
+    height: 28px;
+  }
+  .social-buttons__insta,
+  .social-buttons__insta-img {
+    height: 23px;
+  }
+  // .social-buttons__vk:hover,
+  .social-buttons__vk-img:hover,
+  // .social-buttons__fb:hover,
+  .social-buttons__fb-img:hover,
+  // .social-buttons__insta:hover,
+  .social-buttons__insta-img:hover {
+    opacity: 0.5;
+  }
+}
+@media (min-width: 1440px) {
+  .main-footer-wrap{
+    width: 1220px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .main-footer__tittle,
+  .main-footer__social-buttons,
+  .main-footer__designed-from-area {
+    width: 20%;
+  }
+  .main-footer__designed-from-area {
+    justify-content: flex-end;
+  }
+  .main-footer__designed-from-item {
+    margin-left: 23px;
+  }
+}
